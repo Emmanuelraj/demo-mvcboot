@@ -12,7 +12,7 @@
         
 # Url-pattern
 
-   https://localhost:8443/update/{id}            post   ---> update post By id
+    https://localhost:8443/update/{id}            post   ---> update post By id
   
     https://localhost:8443/edit/{id}             post   ---> update get By id
     
@@ -25,7 +25,9 @@
     https://localhost:8443/addUser              post  ---> Add user
    
     
-   
+ # Keys
+      location : src/main/resources/thymeleafkeystore.jks
+          
    
 
          
