@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import java.util.Map;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -30,7 +32,11 @@ public class User {
 	@NotBlank(message="email is Mandatory")
 	private String email;
 	
-
+	
+	
+	
+	
+	
 
 	/**
 	 * @return the id
@@ -84,12 +90,13 @@ public class User {
 		super();
 		this.name = name;
 		this.email = email;
+	
 	}
 
 
 	
 
-
+   
 
 
 

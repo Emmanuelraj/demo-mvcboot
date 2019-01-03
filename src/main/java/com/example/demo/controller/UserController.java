@@ -5,6 +5,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.demo.model.User;
@@ -122,6 +124,36 @@ public class UserController {
 		  return "index";
 		  
 	}
+	
+	
+	
+	
+	@GetMapping("/findData")
+	public  String  findDatas()
+	{
+			 return "customQuery";
+	}
+	
+	@PostMapping("/findDataBtwn")
+	//@ResponseBody
+    public  String  findDatas(@RequestParam("id1")long id1,@RequestParam("id2")long id2)
+	{
+		System.out.println("id1--->"+id1+"id2--->"+id2);
+		
+		 //userJpaRepository.findBtwnData(id1,id2);
+		  
+		//userJpaRepository.
+		
+		
+		
+		return "index";
+	}
+	
+	
+	
+	
+	
+
 	
 	
 
